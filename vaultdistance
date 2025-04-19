@@ -1,0 +1,7 @@
+while wait() do
+	for _, v in ipairs(game:GetDescendants()) do
+		if v:IsA("ProximityPrompt") and v.Name == "Vault" then
+			v.MaxActivationDistance = 6.75
+		end
+	end
+end
